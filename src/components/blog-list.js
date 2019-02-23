@@ -19,18 +19,18 @@ const BlogList = ({data}) => {
 
 export const query = graphql`
 query HomePageQuery{
-  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+  allMarkdownRemark {
     totalCount
     edges {
-      node {
-        frontmatter {
-          title
-          date
-          author
+        node {
+          frontmatter {
+            title
+            date
+            author
+          }
+          excerpt
+          timeToRead
         }
-        excerpt
-        timeToRead
-      }
     }
   }
 }
