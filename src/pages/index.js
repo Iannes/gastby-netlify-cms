@@ -9,8 +9,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <h1>Hi people</h1>
-    <p>Welcome to my Gatsby Blog.</p>
-    <p>Now go build something great.</p>
+    <p>Welcome to my Gatsby Blog.</p>    
     <div style={{ maxWidth: `200px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
