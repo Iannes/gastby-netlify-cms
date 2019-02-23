@@ -21,7 +21,7 @@ const linkStyles = {
 const Logo = props => (  
     <Link style={linkStyles}
       to={props.to}><h1>{props.children}</h1>         
-      </Link>  
+    </Link>  
 )
 
 

@@ -1,4 +1,5 @@
 ---
+path: "/blog/basic-web-development"
 title: "Basic Web Development"
 date: "2019-22-02"
 author: "Yannis Spyrou"

@@ -14,15 +14,7 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-    },
-    `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `src`,
-        path: `${__dirname}/src/blog`,
-      },
-    },
+    },   
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -38,7 +30,15 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages/blog`,
+        name: `markdown-pages`,
+      },
+    },
+        
+    {
+      resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [], // just in case those previously mentioned remark plugins sound cool :)
       },

@@ -1,4 +1,5 @@
 ---
+path: "/blog/the-beginning-of-the-web"
 title: "The Beginning of The Web"
 date: "2018-01-10"
 author: "Chuloo Will"
