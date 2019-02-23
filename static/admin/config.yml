@@ -1,5 +1,9 @@
 backend:
-  name: Iannes/gastby-netlify-cms
+  name: github
+  repo: Iannes/gastby-netlify-cms
+  accept_roles:
+    - admin
+    - editor  
 
 media_folder: static/assets
 public_folder: assets
