@@ -1,25 +1,22 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+
 import Layout from "../components/layout"
-import Image from "../components/image";
-import SEO from "../components/seo";
 
 export default ({ data }) => {
   return (
     <Layout>
       <div>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <h1>Hi people</h1>
-      <p>Welcome to my Gatsby Blog.</p>
-      <div style={{ maxWidth: `200px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
+        <h1
+        >
+          Amazing Pandas Eating Things
+        </h1>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link
               to={node.frontmatter.path}
-              style={{ textDecoration:`none`, color: `inherit` }}
+              
             >
               <h3
               >
