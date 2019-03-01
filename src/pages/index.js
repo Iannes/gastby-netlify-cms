@@ -10,7 +10,7 @@ export default ({ data }) => {
       <div>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <h1>Hi people</h1>
-      <p>Welcome to my Gatsby Blog.</p>
+      <p>React Side Projects.</p>
       <div style={{ maxWidth: `200px`, marginBottom: `1.45rem` }}>
         <Image />
       </div>
@@ -19,7 +19,7 @@ export default ({ data }) => {
           <div key={node.id}>
             <Link
               to={node.frontmatter.path}
-              style={{ textDecoration:`none`, color: `inherit` }}
+              style={{ textDecoration:`none`, color: `inherit`,  }}
             >
               <h3
               >

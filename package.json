@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A list of all my React projects",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Yannis Spyrou <js15js@gmail.com>",
   "dependencies": {
     "gatsby": "^2.1.11",
     "gatsby-image": "^2.0.29",
