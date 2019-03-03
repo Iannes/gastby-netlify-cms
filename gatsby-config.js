@@ -36,16 +36,7 @@ module.exports = {
         name: `markdown-pages`,
       },
     },
-    `gatsby-transformer-remark`,        
-    // {
-    //   resolve: `gatsby-transformer-remark`,
-    //   options: {
-    //     plugins: [], // just in case those previously mentioned remark plugins sound cool :)
-    //   },
-    // },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    `gatsby-transformer-remark`,
     `gatsby-plugin-netlify-cms`,
     
   ],

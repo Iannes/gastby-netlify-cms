@@ -18,7 +18,7 @@ const linkStyles = {
   flex: `1`,
 }
 
-const containerSTYLES ={
+const containerStyles ={
   margin: `0 auto`,
   maxWidth: 960,
   padding: `1.45rem 1.0875rem 0`,
@@ -38,7 +38,7 @@ const Logo = props => (
 
 const Header = ({ siteTitle }) => (
   <header style={headerStyles}>
-    <Container style={containerSTYLES}>
+    <Container style={containerStyles}>
         <Logo to='/'>{siteTitle}</Logo>
         <Nav />
     </Container>

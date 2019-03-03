@@ -10,6 +10,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       name: `slug`,
       value: slug,
+      trailingSlash: false,
     })
   }
 }
