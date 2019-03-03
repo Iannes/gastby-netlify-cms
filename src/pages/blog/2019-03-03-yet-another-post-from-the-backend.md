@@ -1,5 +1,5 @@
 ---
-path: blog/test2
+path: blog/test2/
 date: 2019-03-03T12:51:29.931Z
 title: Yet another post from the backend
 ---
