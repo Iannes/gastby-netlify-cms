@@ -5,14 +5,31 @@ const BlogList = ({data}) => {
     console.log(data)
     return(
     <div>
-      {data.allMarkdownRemark.edges.map(({node}) => (
-        <div key={node.id} className="article-box">
-          <h3 className="title">{node.frontmatter.title}</h3>
-          <p className="author">{node.frontmatter.author}</p>
-          <p className="date">{node.frontmatter.date} {node.timeToRead}min read</p>
-          <p className="excerpt">{node.excerpt}</p>
-        </div>
-      ))}
+        <section className="card__container">
+        {
+            data.allMarkdownRemark.edges.map(({node}) => (
+                <article className="card" key={node.id}>
+                    <header></header>
+                    <article className="card-title__container">
+                        <h4>{node.frontmatter.title}</h4>
+                        <p className='grey'>By {node.frontmatter.author}</p>
+                    </article>
+                    <section className="main-content">
+                        <p className='grey'>{node.excerpt}</p>
+                    </section>
+                    <section className="card-footer">
+                        <nav>
+                            <ul>
+                                <li><a href="">Site</a></li>
+                                <li><a href="">Code</a></li>
+                                <li><a href="">Like</a></li>
+                                <li><a href="">Share</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </article>        
+        ))}        
+        </section>
     </div>
     )
   }
